@@ -250,7 +250,7 @@ public class Matrix{
             return null;
         }
 
-        if(det() == 0){
+        if(Math.abs(det()) < Constants.EPSILON){
             System.out.println("MATRIX ERROR: Cannot invert a non-singular matrix");
             return null;
         }
